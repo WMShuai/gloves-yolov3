@@ -41,16 +41,16 @@ cd gloves-yolov3
 pip install -r requirements.txt  # install
 ```
 ## <div align="center">Detect</div>
-To see the results of the model at the best performance:
+To see the results of the model at the best performance, the weights can be downloaded from [best weights](https://):
 
 ```bash
-python detetct.py --view-img --weights runs/train/exp/weights/best.pt --source Test_Gloves_1.mp4
+python detetct.py --view-img --weights best.pt --source Test_Gloves_1.mp4
 ```
 
-To see the results of the model at the last epochs' performance:
+To see the results of the model at the last epochs' performance, the weights can be downloaded from [last weights](https://):
 
 ```bash
-python detetct.py --view-img --weights runs/train/exp/weights/last.pt --source Test_Gloves_1.mp4
+python detetct.py --view-img --weights last.pt --source Test_Gloves_1.mp4
 ```
 
 ## <div align="center">Further research</div>
@@ -63,6 +63,7 @@ pip install meidapipe
 Then, run the following code:
 
 ```bash
-python YOLO_MP.py --nosave --view-img --weights runs/train/exp/weights/best.pt --source Test_Gloves_1.mp4
+python YOLO_MP.py --nosave --view-img --weights best.pt --source Test_Gloves_1.mp4
 ```
 
+The [video](https://) shows the result together with MediaPipe
