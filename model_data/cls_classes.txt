@@ -1,0 +1,4 @@
+Canvas_Glove
+White_Glove
+Black_Glove
+Bare_Hand

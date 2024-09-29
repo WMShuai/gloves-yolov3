@@ -1,0 +1,7 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+train: E:\Gloves\yolov5-master\yolov5-master\VOCdevkit\images\train  # train images (relative to 'path')
+val: E:\Gloves\yolov5-master\yolov5-master\VOCdevkit\images\val  # val images (relative to 'path')
+
+# Classes
+nc: 4  # number of classes
+names: ['Canvas_Glove', 'Bare_Hand', 'Black_Glove', 'White_Glove']  # class names
