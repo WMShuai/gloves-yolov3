@@ -3,41 +3,99 @@
 
 ## <div align="center">Performance</div>
 ### Structure of improved YOLOv3
-![Structure of improved YOLOv3](Figures/Figure7.png)
+
+<div align="center">
+  <img src="Figures/Figure7.png" alt="The structure of improved YOLOv3" width="90%"/>
+  <p><i>Figure 1：The improved structure of YOLOv3, which used GhostConv in the backbone, added CBAM to the neck and used EIoU as loss function.</i></p>
+</div>
 
 ### Comparison with other real-time object detectors, the improved model achieve state-of-the-arts performance
-![Comparison with other real-time object detectors, the improved model achieve state-of-the-arts performance](Figures/Figure1.png)
+<div align="center">
+  <img src="Figures/Figure1.png" alt="Comparison with other real-time object detectors, the improved model achieve state-of-the-arts performance" width="90%"/>
+  <p><i>Figure 2：Comparison with other real-time object detectors, the improved model achieve state-of-the-arts performance.</i></p>
+</div>
 
 ### Visual results of the Improved model
-<p align="center">
-  <img src="Figures/Figure11_a.jpg" alt="The detection results of the improved model" width="90%" />
-  <img src="Figures/Figure11_b.jpg" alt="The detection results of the default model" width="90%" />
-  <img src="Figures/Figure11_a.jpg" alt="The detection results of the improved model" width="90%" />
-</p>
+<div align="center">
+  <img src="Figures/Figure11_a.jpg" alt="The detection results of the improved model" width="90%"/>
+  <p><i>Figure 3-a</i></p>
+</div>
 
-<p align="center">
-  <img src="Figures/Figure11_d.jpg" alt="The detection results of the improved model" width="22%" />
-  <img src="Figures/Figure11_e.jpg" alt="The detection results of the default model" width="22%" />
-  <img src="Figures/Figure11_f.jpg" alt="The detection results of the improved model" width="22%" />
-  <img src="Figures/Figure11_g.jpg" alt="The detection results of the improved model" width="22%" />
-</p>
+<div align="center">
+  <img src="Figures/Figure11_b.jpg" alt="The detection results of the improved model" width="90%"/>
+  <p><i>Figure 3-b</i></p>
+</div>
+
+<div align="center">
+  <img src="Figures/Figure11_c.jpg" alt="The detection results of the improved model" width="90%"/>
+  <p><i>Figure 3-c</i></p>
+</div>
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="Figures/Figure11_d.jpg" alt="YOLOv3 Structure" width="90%"/>
+        <p><i>Figure 3-d</i></p>
+      </td>
+      <td align="center">
+        <img src="Figures/Figure11_e.jpg" alt="Backbone with GhostConv" width="90%"/>
+        <p><i>Figure 3-e</i></p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="Figures/Figure11_f.jpg" alt="Neck with CBAM" width="90%"/>
+        <p><i>Figure 3-f</i></p>
+      </td>
+      <td align="center">
+        <img src="Figures/Figure11_g.jpg" alt="EIoU Loss Function" width="90%"/>
+        <p><i>Figure 3-g</i></p>
+      </td>
+    </tr>
+  </table>
+</div>
 
 ### Visual comparison of improved model and original model: the improved model can detect the right gloves with the right number.
-<p align="center">
-  <img src="Figures/Figure14_a.jpg" alt="The detection results of the improved model" width="45%" />
-  <img src="Figures/Figure14_b.jpg" alt="The detection results of the default model" width="45%" />
-</p>
 
-<p align="center">
-  <img src="Figures/Figure14_c.jpg" alt="The detection results of the improved model" width="90%" />
-  <img src="Figures/Figure14_d.jpg" alt="The detection results of the default model" width="90%" />
-</p>
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="Figures/Figure14_a.jpg" alt="YOLOv3 Structure" width="90%"/>
+        <p><i>Figure 4-a: The improved model can detect the right number and position of the gloves</i></p>
+      </td>
+      <td align="center">
+        <img src="Figures/Figure14_b.jpg" alt="Backbone with GhostConv" width="90%"/>
+        <p><i>Figure 4-b: The default model detect the glove with wrong number and position</i></p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div align="center">
+  <img src="Figures/Figure14_c.jpg" alt="The detection results of the improved model" width="90%"/>
+  <p><i>Figure 4-c: The improved model detects gloves with the rights number.</i></p>
+</div>
+
+<div align="center">
+  <img src="Figures/Figure14_d.jpg" alt="The detection results of the default model" width="90%"/>
+  <p><i>Figure 4-d: The default model detects 2 gloves as 1.</i></p>
+</div>
+
 
 ### The effect of adding CBAM
 As a result, the network gains a better understanding of the importance of different channels and positions within various feature maps. The channel attention mechanism allows the network to allocate weights based on the significance of each channel, helping it identify which channels are more critical. Additionally, through the spatial attention mechanism, the network can determine the importance of specific positions within the feature map, enabling it to focus on those areas. Figure below illustrates the heatmap changes in the image after the addition of CBAM.
 
-![Heatmap of adding CBAM](Figures/Figure12_b.png)
-![Heatmap of not adding CBAM](Figures/Figure12_c.png)
+<div align="center">
+  <img src="Figures/Figure12_b.png" alt="The detection results of the improved model" width="90%"/>
+  <p><i>Figure 5-a: Heatmap of adding CBAM.</i></p>
+</div>
+
+<div align="center">
+  <img src="Figures/Figure12_c.png" alt="The detection results of the default model" width="90%"/>
+  <p><i>Figure 5-a: Heatmap of not adding CBAM.</i></p>
+</div>
 
 ## <div align="center">Install</div>
 Clone repo and install [requirements.txt](https://github.com/ultralytics/yolov5/blob/master/requirements.txt) in a [**Python>=3.7.0**](https://www.python.org/) environment, including [**PyTorch>=1.7**](https://pytorch.org/get-started/locally/).
