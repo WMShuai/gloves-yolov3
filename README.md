@@ -41,13 +41,13 @@ cd gloves-yolov3
 pip install -r requirements.txt  # install
 ```
 ## <div align="center">Detect</div>
-To see the results of the model at the best performance, the weights can be downloaded from [best weights](https://):
+To see the results of the model at the best performance, the weights can be downloaded from [best weights](https://pan.baidu.com/s/1TuEROc4JO7jMxFX5TDB3Ew?pwd=qu3a):
 
 ```bash
 python detetct.py --view-img --weights best.pt --source Test_Gloves_1.mp4
 ```
 
-To see the results of the model at the last epochs' performance, the weights can be downloaded from [last weights](https://):
+To see the results of the model at the last epochs' performance, the weights can be downloaded from [last weights](https://pan.baidu.com/s/1yKCcHeItCD_5ggchs12JQQ?pwd=u5mv):
 
 ```bash
 python detetct.py --view-img --weights last.pt --source Test_Gloves_1.mp4
