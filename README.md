@@ -10,13 +10,13 @@
 
 ### Visual results of the Improved model
 <p align="center">
-  <img src="Figures/Figure11_a.jpg" alt="The detection results of the improved model" width="45%" />
-  <img src="Figures/Figure11_b.jpg" alt="The detection results of the default model" width="45%" />
-  <img src="Figures/Figure11_a.jpg" alt="The detection results of the improved model" width="45%" />
+  <img src="Figures/Figure11_a.jpg" alt="The detection results of the improved model" width="90%" />
+  <img src="Figures/Figure11_b.jpg" alt="The detection results of the default model" width="90%" />
+  <img src="Figures/Figure11_a.jpg" alt="The detection results of the improved model" width="90%" />
 </p>
 
 <p align="center">
-  <img src="Figures/Figure11_d.jpg" alt="The detection results of the improved model" width="22" />
+  <img src="Figures/Figure11_d.jpg" alt="The detection results of the improved model" width="22%" />
   <img src="Figures/Figure11_e.jpg" alt="The detection results of the default model" width="22%" />
   <img src="Figures/Figure11_f.jpg" alt="The detection results of the improved model" width="22%" />
   <img src="Figures/Figure11_g.jpg" alt="The detection results of the improved model" width="22%" />
@@ -29,8 +29,8 @@
 </p>
 
 <p align="center">
-  <img src="Figures/Figure14_c.jpg" alt="The detection results of the improved model" width="45%" />
-  <img src="Figures/Figure14_d.jpg" alt="The detection results of the default model" width="45%" />
+  <img src="Figures/Figure14_c.jpg" alt="The detection results of the improved model" width="90%" />
+  <img src="Figures/Figure14_d.jpg" alt="The detection results of the default model" width="90%" />
 </p>
 
 ### The effect of adding CBAM
@@ -61,7 +61,7 @@ python detetct.py --view-img --weights last.pt --source Test_Gloves_1.mp4
 ```
 
 ## <div align="center">Further research</div>
-We also did some further works using MediaPipe [MediaPipe](https://developers.google.com/mediapipe). This helps the alogorithm to determine wether the gloves were wearing on the worker's hand or left on the ground. To see the performance you need to install MediaPipe.
+We also did some further works using MediaPipe [MediaPipe](https://developers.google.com/mediapipe). This helps the alogorithm to determine whether the gloves were wearing on the worker's hand or left on the ground. To see the performance you need to install MediaPipe.
 
 ```bash
 pip install meidapipe
