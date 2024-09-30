@@ -5,17 +5,22 @@
 ### Structure of improved YOLOv3
 ![Structure of improved YOLOv3](Figures/Figure7.png)
 
-### Comparison with other real-time object detectors, the improved model achieve state-of-thearts performance
+### Comparison with other real-time object detectors, the improved model achieve state-of-the-arts performance
 ![Comparison with other real-time object detectors, the improved model achieve state-of-the-arts performance](Figures/Figure1.png)
 
 ### Visual results of the Improved model
-![Visual results of the Improved model](Figures/Figure11_a.jpg)
-![Visual results of the Improved model](Figures/Figure11_b.jpg)
-![Visual results of the Improved model](Figures/Figure11_c.jpg)
-![Visual results of the Improved model](Figures/Figure11_d.jpg)
-![Visual results of the Improved model](Figures/Figure11_e.jpg)
-![Visual results of the Improved model](Figures/Figure11_f.jpg)
-![Visual results of the Improved model](Figures/Figure11_g.jpg)
+<p align="center">
+  <img src="Figures/Figure11_a.jpg" alt="The detection results of the improved model" width="45%" />
+  <img src="Figures/Figure11_b.jpg" alt="The detection results of the default model" width="45%" />
+  <img src="Figures/Figure11_a.jpg" alt="The detection results of the improved model" width="45%" />
+</p>
+
+<p align="center">
+  <img src="Figures/Figure11_d.jpg" alt="The detection results of the improved model" width="22" />
+  <img src="Figures/Figure11_e.jpg" alt="The detection results of the default model" width="22%" />
+  <img src="Figures/Figure11_f.jpg" alt="The detection results of the improved model" width="22%" />
+  <img src="Figures/Figure11_g.jpg" alt="The detection results of the improved model" width="22%" />
+</p>
 
 ### Visual comparison of improved model and original model: the improved model can detect the right gloves with the right number.
 <p align="center">
@@ -23,8 +28,10 @@
   <img src="Figures/Figure14_b.jpg" alt="The detection results of the default model" width="45%" />
 </p>
 
-![Visual results of the Improved model](Figures/Figure14_c.jpg)
-![Visual results of the default model](Figures/Figure14_d.jpg)
+<p align="center">
+  <img src="Figures/Figure14_c.jpg" alt="The detection results of the improved model" width="45%" />
+  <img src="Figures/Figure14_d.jpg" alt="The detection results of the default model" width="45%" />
+</p>
 
 ### The effect of adding CBAM
 As a result, the network gains a better understanding of the importance of different channels and positions within various feature maps. The channel attention mechanism allows the network to allocate weights based on the significance of each channel, helping it identify which channels are more critical. Additionally, through the spatial attention mechanism, the network can determine the importance of specific positions within the feature map, enabling it to focus on those areas. Figure below illustrates the heatmap changes in the image after the addition of CBAM.
@@ -66,4 +73,6 @@ Then, run the following code:
 python YOLO_MP.py --nosave --view-img --weights best.pt --source Test_Gloves_1.mp4
 ```
 
-The [video](https://) shows the result together with MediaPipe
+The [video](Figures/gloves-mediapipe.gif) shows the result together with MediaPipe
+
+![Gloves detection together with MediaPipe](Figures/gloves-mediapipe.gif)
