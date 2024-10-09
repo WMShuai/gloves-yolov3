@@ -125,15 +125,15 @@ We also made a video about its performance on NVIDIA Jetson Nano. All the equipm
     <tr>
       <td align="center">
         <img src="Figures/Alarm.jpeg" alt="The alarm consists of an Arduino Nano and a buzzer, and is connected to the Jetson Nano via the USB port." width="90%"/>
-        <p><i>Figure 6-a</i></p>
+        <p><i>Figure 6-a: The alarm consists of an Arduino Nano and a buzzer, and is connected to the Jetson Nano via the USB port.</i></p>
       </td>
       <td align="center">
         <img src="Figures/Jetson Nano.jpeg" alt="The Jetson Nano, which is responsible for calculating as well as outputting alarm signals, is encased in an aluminum box to protect it from dust and minimize damage." width="90%"/>
-        <p><i>Figure 6-b</i></p>
+        <p><i>Figure 6-b: The Jetson Nano, which is responsible for calculating as well as outputting alarm signals, is encased in an aluminum box to protect it from dust and minimize damage.</i></p>
       </td>
       <td align="center">
         <img src="Figures/Overall.jpeg" alt="The overall equipment" width="90%"/>
-        <p><i>Figure 6-c</i></p>
+        <p><i>Figure 6-c: The overall equipment</i></p>
       </td>
     </tr>
   </table>
