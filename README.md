@@ -118,6 +118,10 @@ To see the results of the model at the last epochs' performance, the weights can
 python detetct.py --view-img --weights last.pt --source Test_Gloves_1.mp4
 ```
 
+We also made a video about its performance on NVIDIA Jetson Nano. All the equipment was shown in Figure 6. The camera was fixed at the top of the machine tool, which is shown in Figure 7.
+
+
+
 ## <div align="center">Further research</div>
 We also did some further works using MediaPipe [MediaPipe](https://developers.google.com/mediapipe). This helps the alogorithm to determine whether the gloves were wearing on the worker's hand or left on the ground. To see the performance you need to install MediaPipe.
 
