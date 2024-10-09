@@ -139,7 +139,12 @@ We also made a video about its performance on NVIDIA Jetson Nano. All the equipm
   </table>
 </div>
 
+<div align="center">
+  <img src="Figures/Machine tool.png" alt="Camera location" width="90%"/>
+  <p><i>Figure 7: The camera location.</i></p>
+</div>
 
+To view the video, please visit [Bilibili](https://www.bilibili.com/video/BV1bxxxeGEbv/?share_source=copy_web&vd_source=79f614d0a864f67b89c871a949359640)
 
 ## <div align="center">Further research</div>
 We also did some further works using MediaPipe [MediaPipe](https://developers.google.com/mediapipe). This helps the alogorithm to determine whether the gloves were wearing on the worker's hand or left on the ground. To see the performance you need to install MediaPipe.
